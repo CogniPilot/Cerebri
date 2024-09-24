@@ -11,6 +11,9 @@
 build/
 install/
 
+# sim
+flash.bin
+
 __pycache__/
 
 manifest-tmp/

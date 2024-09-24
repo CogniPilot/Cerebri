@@ -8,9 +8,9 @@ zephyr_include_directories()
 
 zephyr_library_sources(
   src/main.c
-  src/writer.c
+  #src/writer.c
   )
 
-zephyr_link_libraries(ELMFAT)
+  #zephyr_link_libraries(ELMFAT)
 
 add_dependencies(cerebri_synapse_log_sdcard synapse_pb)

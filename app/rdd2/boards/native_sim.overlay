@@ -10,7 +10,12 @@
  */
 
 / {
-	chosen {
-		zephyr,telem1 = &uart1;
+	disk: disk {
+		status = "okay";
+		compatible = "zephyr,flash-disk";
+		partition = <&storage_partition>;
+		disk-name = "disk";	
+		sector-size = <512>;
+		cache-size = <16384>;
 	};
 };
